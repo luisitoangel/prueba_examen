@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../image/icons8-google-48.png">
+    <title>EXAMEN</title>
+</head>
+<body>
+    
+    <article id="izquierda">
+    <h1 id="h1">HOTEL</h1>
+    <label id="n">N°</label><input type="text" id="num" placeholder="001" disabled>
+    <label id="ubi">UBICACION:</label><input type="text" id="ubicacion" placeholder="ubicacion"><br>
+    <label id="cli">CLIENTE:</label><input type="text" id="cliente" placeholder="cliente"><label id="dn">DNI:</label>
+    <input type="text"  id="dni" placeholder="dni"><br>
+    <label class="ti">TIPO:</label>
+    <select name="selecion" id="tipo">
+        <option value="matrimonial">
+            matrimonial
+        </option>
+        <option value="personal">
+            personal
+        </option>
+        <option value="familiar">
+            familiar
+        </option>
+    </select>
+    <label id="nume">CANT PERSONAS</label>
+    <input type="text" id="cantper" placeholder="cant"><br>
+    <input type="submit" id="reset" value="RESET" onclick=reset();>
+    <input type="submit" id="guardar" value="GUARDAR" onclick=guardar();>
+   
+    </article>
+    <article id="derecha">
+        <section id="t1">
+            <table  id="tabla1">
+                <thead>
+                        <th>#</th>
+                        <th>NOMBRE</th>
+                        <th>DNI</th>
+                        <th>FECHA</th>
+                        <th>UBICACION</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        <section id="t2">
+            <table id="tabla2">
+                <thead>
+                        <th>#</th>
+                        <th>HABITACION</th>
+                        <th>COSTO</th>
+                        <th>CANTIDAD</th>
+                        <th>ACTION</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <label id="tot">TOTAL:</label>
+            <input type="text" id="total" >
+        </section>
+    </article>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
